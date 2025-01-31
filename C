@@ -1,0 +1,44 @@
+/********************************
+
+    Escreva um programa em C que leia 8 números inteiros e armazene-os em um vetor. 
+    Depois, o programa deve contar quantos desses números são negativos e exibir essa quantidade.
+
+*********************************/
+
+#include <stdio.h>
+
+int main() {
+    int numeros[8]; // Vetor para armazenar 8 números inteiros
+    int soma = 0;   // Variável para somar os valores
+    float media;    // Variável para armazenar a média
+
+    // Ler os 8 números inteiros
+    printf("Digite 8 numeros:\n");
+    for (int i = 0; i < 8; i++) {
+        printf("Número %d: ", i + 1);
+        scanf("%d", &numeros[i]);
+        soma += numeros[i]; // Soma os valores digitados
+    }
+
+    // Calcula a média corretamente
+    media = (float)soma / 8;
+
+    // Exibir a média dos números
+    printf("\nA média dos números é: %.2f\n", media);
+
+    return 0;
+}
+ 
+ /* _______________________________
+   | .___________________________. |
+   | |                           | |
+   | |      Programa Por:        | |
+   | | 𝓡𝓪𝓶𝓸𝓷 𝓑𝓾𝔃𝓾𝓽𝓽𝓲 𝓥𝓸𝓵𝓵𝓮𝓽  | |
+   | |                           | |
+   | |                           | |
+   | .___________________________. |
+   /.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.\       
+  /.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.\      
+ /.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.\     
+/_______/____________________\________\
+\_____________________________________/    
